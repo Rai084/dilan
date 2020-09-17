@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+html{
+    margin-bottom: 50px;
+}
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+@media(min-width: 992px) {
+    .showMenu {
+        text-align: center;
+        width: 100px;
+        position: absolute;
+        right: 100px;
+        top: 55px;
+        padding: 5px 10px;
+        /* box-shadow: 0 0 10px 1px black; */
+        display: none;
+        transition: 1s;
+        border-radius: 20px;
+        overflow: hidden;
+        background: white;
+        opacity: 0;
+    }
+
+    #up {
+        position: absolute;
+        top: 20px;
+        right: 91px;
+        opacity: 0;
+    }
+
+    .showMenu a {
+        font-size: 14px;
+        margin-top: -10px !important;
+        color: black;
+        font-weight: 600;
+        text-decoration: none;
+        /* overflow: hidden; */
+    }
+
+    .showMenu a:hover {
+        color: rgb(255, 0, 0);
+    }
+
+    .active {
+        opacity: 1;
+        top: 40px;
+        display: block;
+    }
+
+    .showMenu a::after {
+        /* content: '';
+      display: block;
+      width: 130%;
+      margin-left: -10px;
+      border-bottom: 1px solid black;
+      margin-bottom: 5px; */
+    }
+
+    nav {
+        margin-top: 0px;
+    }
+
+    .navbar-brand p {
+        color: #DB1818;
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: 900;
+    }
+
+    .nav1 {
+        color: #DB1818 !important;
+        font-weight: 600;
+        border: 2px solid #DB1818;
+        border-radius: 20px;
+        padding: 3px 20px !important;
+        /* display: inline-block; */
+        box-shadow: 0px 10px 10px -12px black;
+        margin-right: 10px !important;
+        transition: all .3s;
+    }
+
+    .nav1:hover {
+        background-color: #DB1818;
+        color: white !important;
+        transform: scale(1.1);
+    }
+
+    .nav2 {
+        margin-right: 10px;
+    }
+
+    .navbar-nav {
+        margin-right: 80px;
+    }
+
+    .navbar-nav a {
+        /* margin-right: 10px !important; */
+    }
+
+    .fa-angle-down {
+        /* margin-left: 5px; */
+        position: relative;
+        left: 5px;
+        top: 2px;
+    }
+
+    /* Jumbotron */
+    .jumbotron {
+        background-image: url('img/working.jpg');
+        background-size: cover;
+        height: 600px;
+        text-align: center;
+        z-index: 1;
+        /* margin-top: -10px; */
+        /* overflow: hidden; */
+        /* background-position-y: 10px; */
+    }
+
+    .jumbotron::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 110%;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+        position: absolute;
+        bottom: 0;
+        z-index: -1;
+    }
+
+    .name {
+        font-weight: 600;
+        text-transform: capitalize;
+        margin-right: 5px !important;
+    }
+
+    .name:hover {
+        opacity: 0.8;
+    }
+
+    .btnPilih {
+        margin-top: 37%;
+        border: 2px solid #DB1818;
+        color: #DB1818 !important;
+        font-weight: 900;
+        border-radius: 20px;
+        padding: 5px 20px;
+        transition: all .3s ease;
+        /* text-shadow: 1px 1px 1px black; */
+        box-shadow: 0px 10px 20px 5px black;
+    }
+
+    .btnPilih:hover {
+        background-color: #DB1818;
+        color: white !important;
+        transform: scale(1.1);
+    }
+
+    .jumbotron p {
+        margin-top: 10px;
+        text-shadow: 1px 1px 1px black;
+    }
+
+}
+
+
+/*Content*/
+.card {
+    border: none;
+    box-shadow: 0 0 12px 0px rgb(228, 227, 227);
+    /* height: 340px; */
+    transition: .4s;
+}
+
+#viewMore {
+    border-radius: 20px;
+    padding: 5px 20px;
+    background-color: #db1818;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    transition: .4s;
+    box-shadow: 0 0 10px -5px rgb(20, 20, 20);
+    margin-top: 20px !important;
+    margin-bottom: 100px;
+}
+
+.readMore {
+    opacity: 0;
+    transition: all 1s ease-out;
+}
+
+#viewMore:hover {
+    font-weight: 600;
+    margin-bottom: 98px;
+    background: #fff;
+    color: #db1818;
+    border: 2px solid #db1818;
+}
+
+#viewMore:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+
+.card-body {
+    margin-top: -10px;
+}
+
+.Content {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill);
+    grid-row-gap: 10px;
+}
+
+.btnContent {
+    border: 2px solid #DB1818;
+    padding: 5px 15px;
+    border-radius: 4px;
+    color: #DB1818;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all .3s ease;
+    text-decoration: none !important;
+}
+
+.btnContent:hover {
+    background-color: #DB1818;
+    color: white;
+}
+
+.inner::after {}
+
+.card-text {
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.inner {
+    overflow: hidden;
+}
+
+.inner img {
+    transition: all 1s ease;
+}
+
+.inner img:hover {
+    transform: scale(1.1);
+}
+
+/* .inner:hover::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 110%;
+    background-image: linear-gradient(to top, rgba(0,0,0,.5), rgba(0,0,0,0));
+    position: absolute;
+    bottom: 154px;
+    border-radius: 2px !important;
+} */
+
+.col-lg {
+    position: relative;
+    left: 20px;
+}
+
+.card:hover {
+    transform: scale(1);
+}
